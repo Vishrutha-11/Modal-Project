@@ -1,39 +1,32 @@
-Modal Project 
+Testing PR workflow trigger
+# Modal Project
 
-This project shows how a popup box (modal) works on a website.
-When you click a button, a modal opens.
-You can close it by clicking the X button, clicking outside the modal, or pressing the ESC key.
-It is made using HTML, CSS, and JavaScript.
+This project demonstrates a popup modal window built with HTML, CSS, and JavaScript.
 
-1.Steps to Run the Modal Project
+Users can open a modal by clicking one of the buttons. The modal can be closed by clicking the close button, clicking the overlay, or pressing the Escape key.
 
-Open Command Prompt
+## Run locally
 
-2.Clone the repository
+1. Clone the repository:
 
-git clone https://github.com/vishruthavishu297-star/Modal-Project.git
+   ```bash
+   git clone https://github.com/vishruthavishu297-star/Modal-Project.git
+   ```
 
+2. Open the project folder:
 
-3.Go back to the main folder
+   ```bash
+   cd Modal-Project
+   ```
 
-cd ..
+3. Open `index.html` in a browser.
 
+## Development checks
 
-4.Open the cloned project
+The project includes lightweight npm scripts for syntax checks, tests, and a static build copy.
 
-cd Modal-Project
-
-
-5.Open the project in VS Code
-
-code .
-
-
-6.Run the project
-
-Open index.html in your browser
-
-Right-click on index.html → Open with → Chrome
-
-7.Done!
-The modal window project will run in your browser.
+```bash
+npm run lint
+npm test
+npm run build
+```

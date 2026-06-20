@@ -9,7 +9,10 @@
   </head>
   <body>
     <button
+      type="button"
       class="show-modal"
+      aria-haspopup="dialog"
+      aria-controls="modal-window"
       data-text="This is paragraph for Modal 1
      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -19,8 +22,11 @@
       Show modal 1
     </button>
     <button
+      type="button"
       class="show-modal"
-      data-text="This is paragraph for Modal 2 
+      aria-haspopup="dialog"
+      aria-controls="modal-window"
+      data-text="This is paragraph for Modal 2
     Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
@@ -29,7 +35,10 @@
       Show modal 2
     </button>
     <button
+      type="button"
       class="show-modal"
+      aria-haspopup="dialog"
+      aria-controls="modal-window"
       data-text="This is paragraph for Modal 3
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -43,9 +52,16 @@
       Show modal 3
     </button>
 
-    <div class="modal hidden">
-      <button class="close-modal">&times;</button>
-      <h1>I'm a modal window 😍</h1>
+    <div
+      id="modal-window"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modal-title"
+    >
+      <button type="button" class="close-modal" aria-label="Close modal">&times;</button>
+      <h1 id="modal-title">I'm a modal window 😍</h1>
       <p class="modal-text"></p>
     </div>
 
