@@ -1,3 +1,4 @@
+Testing PR workflow trigger
 # Modal Project
 
 This project demonstrates a popup modal window built with HTML, CSS, and JavaScript.
